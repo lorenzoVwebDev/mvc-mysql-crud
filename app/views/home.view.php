@@ -19,7 +19,7 @@
   <section class="main-section">
 
     <section class="crud-section">
-      <h3>CRUD operations on Logs</h3>
+      <h3>CRUD operations on Mysql database</h3>
       <form id="appointment-list">
         <fieldset>
           <label for="title">Title:</label>

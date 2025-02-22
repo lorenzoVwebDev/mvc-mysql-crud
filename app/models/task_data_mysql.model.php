@@ -97,9 +97,9 @@ class Task_data {
     }
     $newArray = $this->task_array['task'];
 
-/*     if (!($oldArray[$recordNumber+1] == $newArray[$recordNumber])) {
+    if (!($oldArray[$recordNumber+1] == $newArray[$recordNumber])) {
       throw new Exception('deleteRecord is not working properly', 500);
-    }  */
+    } 
   }
 
   function processRecords(string $crud_type, array|int|string $records_value) {
