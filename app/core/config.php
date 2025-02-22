@@ -28,8 +28,8 @@ if ($_SERVER['SERVER_NAME'] == 'mvc-mysql-crud') {
   define('LOGS', __DIR__."//..//..//". "logs");
   define('ROOT', 'https://apachebackend.lorenzo-viganego.com/mvc-mysql-crud/');
   define('DBHOST', 'localhost');
-  define('DBNAME', 'lorenzo1');
-  define('DBUSER', 'root');
+  define('DBNAME', 'mvc_mysql_crud');
+  define('DBUSER', 'lorenzo');
   define('DBPASSWORD', $_ENV['DB_PASSWORD']);
 };
 
