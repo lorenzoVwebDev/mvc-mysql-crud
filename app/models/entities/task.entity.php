@@ -18,7 +18,6 @@ class Task_entity {
     $error_duedate = $this->set_task_duedate($properties_array['duedate']) == true ? 'true,' : 'false,';
     $error_priority = $this->set_task_priority($properties_array['priority']) == true ? 'true,' : 'false,';
 
-    show($this->task_title);
     $this->error_message = $error_title.$error_description.$error_duedate.$error_priority;
   }
 

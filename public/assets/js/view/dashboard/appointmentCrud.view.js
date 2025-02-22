@@ -7,6 +7,7 @@ export function renderNewTask(result, response) {
     taskDiv.classList.add('task');
   
     taskDiv.innerHTML = `
+    <div class="task-container">
       <div class="task-info">
         <strong>${title}</strong>
         <p>${description}</p>
@@ -17,6 +18,7 @@ export function renderNewTask(result, response) {
         <button class="update-task">Edit</button>
         <button class="delete-task">Delete</button>
       </div>  
+    </div>
     `
   
     taskContainer.append(taskDiv);
@@ -45,15 +47,17 @@ export function renderStoredTask(result, response) {
     console.log(resultArray);
     resultArray.forEach((element)=> {
         const task = `
-        <div class="task-info">
-          <strong>${element[1].tasktitle}</strong>
-          <p>${element[1].taskdescription}</p>
-          <small>Due: ${element[1].taskduedate}</small>
-          <small>Priority: ${element[1].taskpriority}</small>
-        </div>
-        <div class="task-actions" data-id=${element[0]}>
-          <button class="update-task">Edit</button>
-          <button class="delete-task">Delete</button>
+        <div class="task-container">
+          <div class="task-info">
+            <strong>${element[1].tasktitle}</strong>
+            <p>${element[1].taskdescription}</p>
+            <small>Due: ${element[1].taskduedate}</small>
+            <small>Priority: ${element[1].taskpriority}</small>
+          </div>
+          <div class="task-actions" data-id=${element[0]}>
+            <button class="update-task">Edit</button>
+            <button class="delete-task">Delete</button>
+          </div>
         </div>  
       `
         taskContainer.innerHTML += task;

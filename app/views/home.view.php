@@ -37,8 +37,8 @@
           <div class="form-actions">
             <div>
               <input type="hidden" name="task" id="task" value="task"/>
-              <button type="submit" id="submit-button">Add/Update</button>
-              <button type="clear">Clear</button>
+              <button type="submit" id="submit-button">Add Appointment</button>
+              <button type="button" id="clear-button">Clear</button>
             </div>
           </div>
         </fieldset>

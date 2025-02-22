@@ -62,6 +62,10 @@ document.getElementById('read-task').addEventListener('click', async (event) => 
   }
 })
 
+document.getElementById('clear-button').addEventListener('click', () => {
+  document.querySelector('.tasklist').innerHTML = '';
+})
+
 function addDelete() {
     document.querySelectorAll('.delete-task').forEach((element) => {
     element.removeEventListener('click', deleteClick)

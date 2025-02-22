@@ -1,2 +1,7 @@
-2025-02-17T08:28:05+01:00
-public\assets\css\scss\dashboard.scss: no such file or directory
+2025-02-22T20:23:49+01:00
+expected selector.
+[34m    ╷[0m
+[34m143 │[0m         &:is([31m[0m) {
+[34m    │[0m [31m             ^[0m
+[34m    ╵[0m
+  public\assets\css\scss\home.scss 143:14  root stylesheet

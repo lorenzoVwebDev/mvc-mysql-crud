@@ -16,7 +16,7 @@ class Admin extends Controller {
       $needle = in_array(filter_var($type, FILTER_SANITIZE_FULL_SPECIAL_CHARS), $crudArray);
       if (isset($_POST['task'])&&$needle&&$type === 'insert') {    
           if (isset($_POST['title'])&&isset($_POST['duedate'])) {
-            $newTask['title'] = filter_var($_POST['title'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $newTask['title'] = ucfirst(filter_var($_POST['title'], FILTER_SANITIZE_FULL_SPECIAL_CHARS));
             $newTask['description'] = $_POST['description'] ? filter_var($_POST['description'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : 'none';
             $newTask['duedate'] = filter_var($_POST['duedate'], FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
             $newTask['priority'] = $_POST['priority'] ? filter_var($_POST['priority'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : 'none';
@@ -62,7 +62,7 @@ class Admin extends Controller {
           throw new Exception('invalid data', 400);
         }
         $updatedTaskArray = json_decode($updatedTask, true);
-        $newTask['tasktitle'] = filter_var($updatedTaskArray['title'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+        $newTask['tasktitle'] = ucfirst(filter_var($updatedTaskArray['title'], FILTER_SANITIZE_FULL_SPECIAL_CHARS));
         $newTask['taskdescription'] = $updatedTaskArray['description'] ? filter_var($updatedTaskArray['description'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : 'none';
         $newTask['taskduedate'] = filter_var($updatedTaskArray['duedate'], FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
         $newTask['taskpriority'] = $updatedTaskArray['priority'] ? filter_var($updatedTaskArray['priority'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : 'none';
