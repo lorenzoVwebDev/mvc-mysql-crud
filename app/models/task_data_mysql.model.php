@@ -18,7 +18,7 @@ class Task_data {
     $mysqli = new mysqli(DBHOST, DBUSER, DBPASSWORD, DBNAME);
 
     if ($mysqli->connect_errno) {
-      throw new Exception("MYSQL connection erro: ".$mysqli->connect_error);
+      throw new Exception("MYSQL connection error: ".$mysqli->connect_error);
     }
 
     if (
@@ -27,8 +27,7 @@ class Task_data {
         tasktitle varchar(25), 
         taskdescription varchar(100), 
         taskduedate date, 
-        taskpriority enum('low','medium','high'), 
-        taskid int
+        taskpriority enum('low','medium','high')
       )") 
     ) {
       throw new Exception("Table can't be created or deleted".$mysqli->error, 500);
@@ -40,15 +39,14 @@ class Task_data {
         $taskDescription = $taskvalue['taskdescription'];
         $taskDuedate = $taskvalue['taskduedate'];
         $taskPriority = $taskvalue['taskpriority'];
-        $taskId = $taskvalue['taskid'];
 
         $query_string = "
-          INSERT INTO tasks VALUES (
+          INSERT INTO tasks (tasktitle, taskdescription, taskduedate, taskpriority) VALUES (
             '$taskTitle',
             '$taskDescription',
             '$taskDuedate',
-            '$taskPriority',
-            $taskId)
+            '$taskPriority'
+            )
           ";
         if (!$mysqli->query($query_string)) {
 

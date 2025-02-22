@@ -42,10 +42,8 @@ export function renderStoredTask(result, response) {
     const taskContainer = document.getElementById('tasklist');
     taskContainer.innerHTML = '';
     const resultArray = Object.entries(result);
+    console.log(resultArray);
     resultArray.forEach((element)=> {
-      if (element[0] == '0' || element[0] == '1') {
-        //nothing
-      } else {
         const task = `
         <div class="task-info">
           <strong>${element[1].tasktitle}</strong>
@@ -59,7 +57,6 @@ export function renderStoredTask(result, response) {
         </div>  
       `
         taskContainer.innerHTML += task;
-      }
     })
   } else if (response.status >= 400 && response.status < 500) {
     var modal = document.querySelector('.modal-container');

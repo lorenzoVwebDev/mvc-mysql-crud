@@ -17,16 +17,15 @@ class Task_entity {
     $error_description = $this->set_task_description($properties_array['description']) == true ? 'true,' : 'false,';
     $error_duedate = $this->set_task_duedate($properties_array['duedate']) == true ? 'true,' : 'false,';
     $error_priority = $this->set_task_priority($properties_array['priority']) == true ? 'true,' : 'false,';
-
     $this->error_message = $error_title.$error_description.$error_duedate.$error_priority;
   }
 
   public function insert_data($type) {
 
-      $container = new Container('task_data_model_xml');
+      $container = new Container('task_data_model_mysql');
       $data = $container->create_object();
       $methods_array = get_class_methods($data);
-      $last_position = count($methods_array) - 1;
+      $last_position = count($methods_array) - 2;
       $method_name = $methods_array[$last_position];
       $records_array = array(array(
         'tasktitle' => $this->task_title,
@@ -58,10 +57,8 @@ class Task_entity {
 
   public function set_task_duedate(string $date):bool {
       $error_message = true;
-      $setDate = date_create($date);
-      $logDate = date_format($setDate, "Ymd");
       $dateBool = true;
-      if ($logDate < date("Ymd")) {
+      if ($date < date('Y-m-d')) {
         $dateBool = false;
       } 
       $dateBool ? $this->task_duedate = $date : $error_message = false;

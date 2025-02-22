@@ -21,7 +21,7 @@ let modal = `
                     </div>
                     <div class="mb-3">
                       <label for="duedate">Due Date:</label>
-                      <input type="date" name="duedate" id="duedate" form="update-appointment-list" min="${dayjs().format('YYYY-MM-DD')}"value="${dayjs().format('YYYY-MM-DD')}"/>
+                      <input type="date" name="duedate" id="duedate" form="update-appointment-list" min="${dayjs().format('YYYY-MM-DD')}" value="${dayjs().format('YYYY-MM-DD')}" required/>
                     </div>
                     <div class="mb-3">
                       <label for="priority">Priority:</label>
