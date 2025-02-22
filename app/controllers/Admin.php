@@ -84,7 +84,7 @@ class Admin extends Controller {
       }
     } catch (Exception $e) {
       if ($e->getCode() >= 400 && $e->getCode() < 500) {
-        http_response_code($e->getCode());
+        http_response_code((int) $e->getCode());
         header('Content-Type: application/json');
         $response['result'] = $e->getMessage();
         $response['status'] = $e->getCode();
