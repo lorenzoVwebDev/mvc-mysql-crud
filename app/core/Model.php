@@ -112,14 +112,14 @@ class Model {
             throw new Exception('string to array conversion failed in task_dat_xml.model.php', 500);
           }
         } else if ($type === 'delete') {
-          $container = new Container('task_data_model_xml');
+          $container = new Container('task_data_model_mysql');
           $taskDataModel = $container->create_object();
           $methods = get_class_methods($taskDataModel);
           $last_method = $methods[count($methods)-2];
           $taskDataModel->$last_method($type, $taskArray);
           return $taskArray;
         } else if ($type === 'update') {
-          $container = new Container('task_data_model_xml');
+          $container = new Container('task_data_model_mysql');
           $taskDataModel = $container->create_object();
           $methods = get_class_methods($taskDataModel);
           $lastPosition = count($methods)-2;

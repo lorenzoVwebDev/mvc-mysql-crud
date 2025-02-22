@@ -30,3 +30,6 @@
 02.22.2025 04:48:48 | User Error | Incorrect date value: '' for column 'taskduedate' at row 1 C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php
 02.22.2025 04:49:07 | User Error | Incorrect date value: '' for column 'taskduedate' at row 1 C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php
 02.22.2025 04:49:41 | User Error | Incorrect date value: '' for column 'taskduedate' at row 1 C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php
+02.22.2025 05:21:47 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 05:21:47 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 05:25:51 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php

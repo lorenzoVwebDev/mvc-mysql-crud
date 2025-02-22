@@ -24,6 +24,7 @@ trait Database {
     } else {
       throw new Exception('can\'t validate the query'.$stm->errorInfo()[2], 500);
     }
+    unset($con);
   }
  }
 

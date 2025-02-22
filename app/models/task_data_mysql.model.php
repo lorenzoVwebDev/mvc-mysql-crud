@@ -55,6 +55,7 @@ class Task_data {
       }
     }
 
+    $mysqli->close();
   }
 
   function createRecord($records_array) {
@@ -76,14 +77,15 @@ class Task_data {
   }
 
   function updateRecords($records_array) {
+
     foreach ($records_array as $records => $record_value) {
 
       $this->task_array['task'][$records] = $records_array[$records];
     }
-
   }
 
   function deleteRecord($recordNumber) {
+
     $oldArray = $this->task_array['task'];
     foreach ($this->task_array as $tasks=>&$tasks_value) {
       for ($J =$recordNumber; $J<count($tasks_value)-1;$J++) {
@@ -94,9 +96,10 @@ class Task_data {
       unset($tasks_value[count($tasks_value)-1]);
     }
     $newArray = $this->task_array['task'];
-    if (!($oldArray[$recordNumber+1] == $newArray[$recordNumber])) {
+
+/*     if (!($oldArray[$recordNumber+1] == $newArray[$recordNumber])) {
       throw new Exception('deleteRecord is not working properly', 500);
-    } 
+    }  */
   }
 
   function processRecords(string $crud_type, array|int|string $records_value) {

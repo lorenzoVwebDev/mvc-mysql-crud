@@ -1,5 +1,347 @@
-<br/><font size='1'><table class='xdebug-error xe-warning'dir='ltr'border='1'cellspacing='0'cellpadding='1'><tr><th align='left'bgcolor='#f57900'colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>(!)</span> Warning: Undefined array key "taskid" in C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php on line <i>43</i></th></tr><tr><th align='left'bgcolor='#e9b96e'colspan='5'>Call Stack</th></tr><tr><th align='center'bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left'bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left'bgcolor='#eeeeec'>Location</th></tr><tr><td bgcolor='#eeeeec'align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec'align='right'>453448</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php'bgcolor='#eeeeec'>...\index.php<b>: </b>0</td></tr>
-    <tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec'align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>559480</td><td bgcolor='#eeeeec'>App->loadController()</td><td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>...\index.php<b>:</b>13</td></tr><tr><td bgcolor='#eeeeec'align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0041</td><td bgcolor='#eeeeec'align='right'>559896</td><td bgcolor='#eeeeec'>Admin->taskcrud( <span>$type = </span><span>&#39;insert&#39;</span> )</td><td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\App.php'bgcolor='#eeeeec'>...\App.php<b>: </b>38</td></tr>
-    <tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec'align='center'>0.0041</td><td bgcolor='#eeeeec' align='right'>561824</td><td bgcolor='#eeeeec'>Model->taskCrud(<span>$taskArray=</span><span>[&#39;title&#39; =&gt; &#39;appointment&#39;, &#39;description&#39; =&gt; &#39;none&#39;, &#39;duedate&#39; =&gt; &#39;2025-02-22&#39;, &#39;priority&#39; =&gt; &#39;low&#39;]</span>,
-    <span>$type=</span><span>&#39;insert&#39;</span>)</td><td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php' bgcolor='#eeeeec'>...\Admin.php<b>:</b>24</td></tr><tr><td bgcolor='#eeeeec'align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0042</td><td bgcolor='#eeeeec'align='right'>562352</td><td bgcolor='#eeeeec'>Task_entity->insert_data( <span>$type = </span><span>&#39;insert&#39;</span> )</td><td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php'bgcolor='#eeeeec'>...\Model.php<b>: </b>96</td></tr>
-    <tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec'align='center'>0.0165</td><td bgcolor='#eeeeec' align='right'>566352</td><td bgcolor='#eeeeec'>Task_data->__destruct()</td><td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\entities\task.entity.php' bgcolor='#eeeeec'>...\task.entity.php<b>:</b>38</td></tr></table></font>
+<br/>
+<font size='1'>
+    <table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+        <tr>
+            <th align='left' bgcolor='#f57900' colspan="5">
+                <span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span>
+                Warning: Undefined array key 2 in C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php on line <i>97</i>
+            </th>
+        </tr>
+        <tr>
+            <th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th>
+        </tr>
+        <tr>
+            <th align='center' bgcolor='#eeeeec'>#</th>
+            <th align='left' bgcolor='#eeeeec'>Time</th>
+            <th align='left' bgcolor='#eeeeec'>Memory</th>
+            <th align='left' bgcolor='#eeeeec'>Function</th>
+            <th align='left' bgcolor='#eeeeec'>Location</th>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>1</td>
+            <td bgcolor='#eeeeec' align='center'>0.0001</td>
+            <td bgcolor='#eeeeec' align='right'>451624</td>
+            <td bgcolor='#eeeeec'>{main}(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                0
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>2</td>
+            <td bgcolor='#eeeeec' align='center'>0.0040</td>
+            <td bgcolor='#eeeeec' align='right'>557656</td>
+            <td bgcolor='#eeeeec'>App->loadController(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                13
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>3</td>
+            <td bgcolor='#eeeeec' align='center'>0.0041</td>
+            <td bgcolor='#eeeeec' align='right'>558072</td>
+            <td bgcolor='#eeeeec'>
+                Admin->taskcrud( <span>$type = </span>
+                <span>&#39;delete &#39;</span>
+                , <span>&#39;1 &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\App.php' bgcolor='#eeeeec'>
+                ...\App.php<b>:</b>
+                38
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>4</td>
+            <td bgcolor='#eeeeec' align='center'>0.0041</td>
+            <td bgcolor='#eeeeec' align='right'>559464</td>
+            <td bgcolor='#eeeeec'>
+                Model->taskCrud( <span>$taskArray = </span>
+                <span>1</span>
+                , <span>$type = </span>
+                <span>&#39;delete &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php' bgcolor='#eeeeec'>
+                ...\Admin.php<b>:</b>
+                52
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>5</td>
+            <td bgcolor='#eeeeec' align='center'>0.0167</td>
+            <td bgcolor='#eeeeec' align='right'>561800</td>
+            <td bgcolor='#eeeeec'>
+                Task_data->processRecords( <span>$crud_type = </span>
+                <span>&#39;delete &#39;</span>
+                , <span>$records_value = </span>
+                <span>1</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php' bgcolor='#eeeeec'>
+                ...\Model.php<b>:</b>
+                119
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>6</td>
+            <td bgcolor='#eeeeec' align='center'>0.0167</td>
+            <td bgcolor='#eeeeec' align='right'>561800</td>
+            <td bgcolor='#eeeeec'>
+                Task_data->deleteRecord( <span>$recordNumber = </span>
+                <span>1</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php' bgcolor='#eeeeec'>
+                ...\task_data_mysql.model.php<b>:</b>
+                115
+            </td>
+        </tr>
+    </table>
+</font>
+<br/>
+<font size='1'>
+    <table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+        <tr>
+            <th align='left' bgcolor='#f57900' colspan="5">
+                <span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span>
+                Warning: Undefined array key 1 in C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php on line <i>97</i>
+            </th>
+        </tr>
+        <tr>
+            <th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th>
+        </tr>
+        <tr>
+            <th align='center' bgcolor='#eeeeec'>#</th>
+            <th align='left' bgcolor='#eeeeec'>Time</th>
+            <th align='left' bgcolor='#eeeeec'>Memory</th>
+            <th align='left' bgcolor='#eeeeec'>Function</th>
+            <th align='left' bgcolor='#eeeeec'>Location</th>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>1</td>
+            <td bgcolor='#eeeeec' align='center'>0.0001</td>
+            <td bgcolor='#eeeeec' align='right'>451624</td>
+            <td bgcolor='#eeeeec'>{main}(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                0
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>2</td>
+            <td bgcolor='#eeeeec' align='center'>0.0040</td>
+            <td bgcolor='#eeeeec' align='right'>557656</td>
+            <td bgcolor='#eeeeec'>App->loadController(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                13
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>3</td>
+            <td bgcolor='#eeeeec' align='center'>0.0041</td>
+            <td bgcolor='#eeeeec' align='right'>558072</td>
+            <td bgcolor='#eeeeec'>
+                Admin->taskcrud( <span>$type = </span>
+                <span>&#39;delete &#39;</span>
+                , <span>&#39;1 &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\App.php' bgcolor='#eeeeec'>
+                ...\App.php<b>:</b>
+                38
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>4</td>
+            <td bgcolor='#eeeeec' align='center'>0.0041</td>
+            <td bgcolor='#eeeeec' align='right'>559464</td>
+            <td bgcolor='#eeeeec'>
+                Model->taskCrud( <span>$taskArray = </span>
+                <span>1</span>
+                , <span>$type = </span>
+                <span>&#39;delete &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php' bgcolor='#eeeeec'>
+                ...\Admin.php<b>:</b>
+                52
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>5</td>
+            <td bgcolor='#eeeeec' align='center'>0.0167</td>
+            <td bgcolor='#eeeeec' align='right'>561800</td>
+            <td bgcolor='#eeeeec'>
+                Task_data->processRecords( <span>$crud_type = </span>
+                <span>&#39;delete &#39;</span>
+                , <span>$records_value = </span>
+                <span>1</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php' bgcolor='#eeeeec'>
+                ...\Model.php<b>:</b>
+                119
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>6</td>
+            <td bgcolor='#eeeeec' align='center'>0.0167</td>
+            <td bgcolor='#eeeeec' align='right'>561800</td>
+            <td bgcolor='#eeeeec'>
+                Task_data->deleteRecord( <span>$recordNumber = </span>
+                <span>1</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php' bgcolor='#eeeeec'>
+                ...\task_data_mysql.model.php<b>:</b>
+                115
+            </td>
+        </tr>
+    </table>
+</font>
+<br/>
+<font size='1'>
+    <table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+        <tr>
+            <th align='left' bgcolor='#f57900' colspan="5">
+                <span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span>
+                Warning: http_response_code(): Cannot set response code - headers already sent (output started at C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php:97) in C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php on line <i>54</i>
+            </th>
+        </tr>
+        <tr>
+            <th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th>
+        </tr>
+        <tr>
+            <th align='center' bgcolor='#eeeeec'>#</th>
+            <th align='left' bgcolor='#eeeeec'>Time</th>
+            <th align='left' bgcolor='#eeeeec'>Memory</th>
+            <th align='left' bgcolor='#eeeeec'>Function</th>
+            <th align='left' bgcolor='#eeeeec'>Location</th>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>1</td>
+            <td bgcolor='#eeeeec' align='center'>0.0001</td>
+            <td bgcolor='#eeeeec' align='right'>451624</td>
+            <td bgcolor='#eeeeec'>{main}(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                0
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>2</td>
+            <td bgcolor='#eeeeec' align='center'>0.0040</td>
+            <td bgcolor='#eeeeec' align='right'>557656</td>
+            <td bgcolor='#eeeeec'>App->loadController(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                13
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>3</td>
+            <td bgcolor='#eeeeec' align='center'>0.0041</td>
+            <td bgcolor='#eeeeec' align='right'>558072</td>
+            <td bgcolor='#eeeeec'>
+                Admin->taskcrud( <span>$type = </span>
+                <span>&#39;delete &#39;</span>
+                , <span>&#39;1 &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\App.php' bgcolor='#eeeeec'>
+                ...\App.php<b>:</b>
+                38
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>4</td>
+            <td bgcolor='#eeeeec' align='center'>0.0716</td>
+            <td bgcolor='#eeeeec' align='right'>559944</td>
+            <td bgcolor='#eeeeec'>
+                <a href='http://www.php.net/function.http-response-code' target='_new'>http_response_code</a>
+                ( <span>$response_code = </span>
+                <span>200</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php' bgcolor='#eeeeec'>
+                ...\Admin.php<b>:</b>
+                54
+            </td>
+        </tr>
+    </table>
+</font>
+<br/>
+<font size='1'>
+    <table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+        <tr>
+            <th align='left' bgcolor='#f57900' colspan="5">
+                <span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span>
+                Warning: Cannot modify header information - headers already sent by (output started at C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php:97) in C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php on line <i>55</i>
+            </th>
+        </tr>
+        <tr>
+            <th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th>
+        </tr>
+        <tr>
+            <th align='center' bgcolor='#eeeeec'>#</th>
+            <th align='left' bgcolor='#eeeeec'>Time</th>
+            <th align='left' bgcolor='#eeeeec'>Memory</th>
+            <th align='left' bgcolor='#eeeeec'>Function</th>
+            <th align='left' bgcolor='#eeeeec'>Location</th>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>1</td>
+            <td bgcolor='#eeeeec' align='center'>0.0001</td>
+            <td bgcolor='#eeeeec' align='right'>451624</td>
+            <td bgcolor='#eeeeec'>{main}(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                0
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>2</td>
+            <td bgcolor='#eeeeec' align='center'>0.0040</td>
+            <td bgcolor='#eeeeec' align='right'>557656</td>
+            <td bgcolor='#eeeeec'>App->loadController(  )</td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\public\index.php' bgcolor='#eeeeec'>
+                ...\index.php<b>:</b>
+                13
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>3</td>
+            <td bgcolor='#eeeeec' align='center'>0.0041</td>
+            <td bgcolor='#eeeeec' align='right'>558072</td>
+            <td bgcolor='#eeeeec'>
+                Admin->taskcrud( <span>$type = </span>
+                <span>&#39;delete &#39;</span>
+                , <span>&#39;1 &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\App.php' bgcolor='#eeeeec'>
+                ...\App.php<b>:</b>
+                38
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>4</td>
+            <td bgcolor='#eeeeec' align='center'>0.0726</td>
+            <td bgcolor='#eeeeec' align='right'>560120</td>
+            <td bgcolor='#eeeeec'>
+                <a href='http://www.php.net/function.header' target='_new'>header</a>
+                ( <span>$header = </span>
+                <span>&#39;Content-Type: text/plain &#39;</span>
+                )
+            </td>
+            <td title='C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\controllers\Admin.php' bgcolor='#eeeeec'>
+                ...\Admin.php<b>:</b>
+                55
+            </td>
+        </tr>
+    </table>
+</font>
+1

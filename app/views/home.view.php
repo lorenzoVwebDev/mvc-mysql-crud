@@ -61,9 +61,6 @@
   <script src="<?= ROOT?>public/assets/js/common-components/index.js" type="module"></script>
   <script src="<?= ROOT?>public/assets/js/home.js" type="module"></script>
   <script>
-    window.addEventListener('load', () => {
-      document.getElementById('read-task').click();
-    })
   </script>
 </body>
 </html>
