@@ -1,0 +1,30 @@
+{
+  "name": "logs-table-reader-mvc",
+  "version": "1.0.0",
+  "description": "⚠️ Project In Development!\r ![Features](https://img.shields.io/badge/Features-My%20frontend's%20features-green)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./public/assets/js/utils/styleCompiler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzoVwebDev/logs-table-reader-mvc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorenzoVwebDev/logs-table-reader-mvc/issues"
+  },
+  "homepage": "https://github.com/lorenzoVwebDev/logs-table-reader-mvc#readme",
+  "dependencies": {
+    "all": "^0.0.0",
+    "dayjs": "^1.11.13",
+    "glob": "^11.0.1",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$blue-fb: rgb(8, 144, 255);
+$blue-fb-dark: rgb(8, 33, 255);
+$white-font: rgb(255, 255, 255);
+$black-footer: rgb(23, 23, 23);
+$neon-red: #FF3131;
+
+@mixin poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+:root {
+  @include poppins-regular;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+ 
+.main-section {
+  position: relative;
+  padding-top: calc(1vw + 1vh);
+  padding-bottom: calc(1vw + 1vh);
+  padding-left: calc(1vw + 1vh);
+  padding-right: calc(1vw + 1vh);
+  min-height: 70vh;
+  & .crud-section {
+   display: flex;
+   flex-direction: column;
+   & form {
+    & fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: calc(0.6vw + 0.6vh);
+      & input {
+        border-radius: calc(0.4vw + 0.4vh);
+        padding-left: calc(0.2vw + 0.2vh);
+      }
+
+      & .form-actions {
+        display: flex;
+        justify-content: end;
+        margin-bottom: calc(1vw + 1vh);
+        & div {
+          & button {
+            padding-left: calc(0.4vw + 0.4vh);
+            padding-right: calc(0.4vw + 0.4vh);
+            border: none;
+            background-color: #64ff27;
+            color: white;
+          }
+        }
+      }
+    }
+   }
+
+   & .tasklist {
+    
+   }
+  }
+  
+}
+
+
+
+

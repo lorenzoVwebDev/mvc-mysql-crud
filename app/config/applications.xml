@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+    <application>
+        <type ID='task_data_model_xml'>
+            <location>//..//models//task_data_xml.model.php</location>
+        </type>
+    </application>
+    <application>
+        <type ID='task_data_storage'>
+            <location>//..//storage//xml//tasks.xml</location>
+        </type>
+    </application>
+</applications>

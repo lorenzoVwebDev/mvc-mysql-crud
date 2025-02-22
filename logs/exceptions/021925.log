@@ -1,0 +1,16 @@
+02.19.2025 04:36:01 | User Error | Failed loading XML: Opening and ending tag mismatch: tasks line 1 and task
+ Extra content at the end of the document
+  C:\Users\loren\webDevelopment\phpExcercises\mvc-xml-crud\app\models\task_data_xml.model.php
+02.19.2025 04:37:30 | User Error | Failed loading XML: Opening and ending tag mismatch: tasks line 1 and task
+ Extra content at the end of the document
+  C:\Users\loren\webDevelopment\phpExcercises\mvc-xml-crud\app\models\task_data_xml.model.php
+02.19.2025 04:43:19 | User Error | Failed loading XML: Opening and ending tag mismatch: tasks line 1 and task
+ Extra content at the end of the document
+ 
+02.19.2025 04:44:06 | User Error | Failed loading XML: Opening and ending tag mismatch: tasks line 1 and task
+ Extra content at the end of the document
+ 
+02.19.2025 04:45:27 | User Error | Failed loading XML: Opening and ending tag mismatch: tasks line 1 and task
+ Extra content at the end of the document
+  C:\Users\loren\webDevelopment\phpExcercises\mvc-xml-crud\app\models\task_data_xml.model.php
+02.19.2025 05:12:55 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-xml-crud\app\core\Model.php
