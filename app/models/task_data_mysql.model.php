@@ -18,7 +18,7 @@ class Task_data {
     $mysqli = new mysqli(DBHOST, DBUSER, DBPASSWORD, DBNAME);
 
     if ($mysqli->connect_errno) {
-      throw new Exception("MYSQL connection error: ".$mysqli->connect_error);
+      throw new Exception("MYSQL connection error: ".$mysqli->connect_error, 500);
     }
 
     if (

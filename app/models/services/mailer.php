@@ -82,7 +82,7 @@ class Mailer {
         }
 
      } catch (Exception $e) {
-/*       print $e; */
+      throw new Exception($e->getMessage(), 500);
      }
   }
 }

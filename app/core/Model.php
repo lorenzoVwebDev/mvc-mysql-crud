@@ -28,7 +28,7 @@ class Model {
             if ($log_deleted === 'log deleted') {
               return $log_deleted;
             } else {
-              throw new Exception();
+              throw new Exception('log not deleted', 500);
             }
         }
       } else {
