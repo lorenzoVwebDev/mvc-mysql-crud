@@ -75,7 +75,7 @@ class Admin extends Controller {
 
         if ($updated === 'updated') {
           http_response_code(200);
-          headers('Content-Type: text/plain');
+          header('Content-Type: text/plain');
           echo 'ALL';
         }
 

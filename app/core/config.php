@@ -6,16 +6,16 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__. '/../../');
 $dotenv->load();
 
-if ($_SERVER['SERVER_NAME'] == 'mvc-xml-crud') {
+if ($_SERVER['SERVER_NAME'] == 'mvc-mysql-crud') {
   define('EMAILUSERNAME', $_ENV['EMAIL_USERNAME']);
   define('EMAILPASSWORD', $_ENV['EMAIL_PASSWORD']);
   define('ADMINNAME', $_ENV['ADMINNAME']);
   define('ADMINSURNAME', $_ENV['ADMINSURNAME']);
   define('ADMINMAIL', $_ENV['ADMINMAIL']);
   define('LOGS', __DIR__."//..//..//". "logs");
-  define('ROOT', 'http://mvc-xml-crud/');
+  define('ROOT', 'http://mvc-mysql-crud/');
   define('DBHOST', 'localhost');
-  define('DBNAME', 'lorenzo1');
+  define('DBNAME', 'mvc_mysql_crud');
   define('DBUSER', 'root');
   define('DBPASSWORD', $_ENV['DB_PASSWORD']);
 } else {
@@ -26,7 +26,7 @@ if ($_SERVER['SERVER_NAME'] == 'mvc-xml-crud') {
   define('ADMINSURNAME', $_ENV['ADMINSURNAME']);
   define('ADMINMAIL', $_ENV['ADMINMAIL']);
   define('LOGS', __DIR__."//..//..//". "logs");
-  define('ROOT', 'https://apachebackend.lorenzo-viganego.com/mvc-xml-crud/');
+  define('ROOT', 'https://apachebackend.lorenzo-viganego.com/mvc-mysql-crud/');
   define('DBHOST', 'localhost');
   define('DBNAME', 'lorenzo1');
   define('DBUSER', 'root');

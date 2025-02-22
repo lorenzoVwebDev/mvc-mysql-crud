@@ -25,7 +25,7 @@ const updateClick = async (event) => {
     form.append('id', id);
     const all = await updateTask(url, form);
     modal.style.display = 'none';
-    const responseObject = await selectTask(url, all);
+    const responseObject = await selectTask(url, all.result);
     const {result, response} = responseObject;
     renderStoredTask(result, response);
     addDelete();

@@ -1,0 +1,14 @@
+02.22.2025 11:08:41 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 11:11:05 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 11:11:59 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 11:14:41 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 11:15:29 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 11:16:30 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 11:49:49 | User Error | string to array conversion failed in task_dat_xml.model.php C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\core\Model.php
+02.22.2025 02:40:17 | User Error | Backup file 022225.xml could not be created C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php
+02.22.2025 02:40:20 | User Error | Backup file 022225.xml could not be created C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php
+02.22.2025 03:38:00 | User Error | You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',
+            fourth appointment,
+            2025-02-22,
+            low,
+ ' at line 2 C:\Users\loren\webDevelopment\phpExcercises\mvc-mysql-crud\app\models\task_data_mysql.model.php

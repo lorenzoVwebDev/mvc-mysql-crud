@@ -1,3 +1,3 @@
-const server = 'https://apachebackend.lorenzo-viganego.com/mvc-xml-crud/public/';
-const local = 'http://mvc-xml-crud/public/'
+const server = 'https://apachebackend.lorenzo-viganego.com/mvc-mysql-crud/public/';
+const local = 'http://mvc-mysql-crud/public/'
 export const url = local;

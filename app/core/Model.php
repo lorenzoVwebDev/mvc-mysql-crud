@@ -99,8 +99,9 @@ class Model {
             return $taskArray;
           } 
         } else if ($type === 'select') {
-          $container = new Container('task_data_model_xml');
+          $container = new Container('task_data_model_mysql');
           $taskDataModel = $container->create_object();
+
           $methods = get_class_methods($taskDataModel);
           $lastPosition= count($methods) - 1;
           $method_name = $methods[$lastPosition];

@@ -21,6 +21,7 @@ export async function insertTask(form, url) {
 }
 
 export async function selectTask(url, id) {
+  console.log(id)
   const response = await fetch(`${url}/admin/taskcrud/select?id=${id}`);
   
   if (response.status >= 200 && response.status < 400) {
