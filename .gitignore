@@ -3,3 +3,4 @@ notes.txt
 /vendor/
 mvc.png
 /node_modules/
+render.errors.html
