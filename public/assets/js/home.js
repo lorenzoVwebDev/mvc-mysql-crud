@@ -19,7 +19,8 @@ const deleteClick = async (event) => {
 const updateClick = async (event) => {
   const id = event.target.parentElement.dataset.id;
   const modal = renderEditModal();
-  document.getElementById('update-appointment-list').addEventListener('submit', async (newEvent) => {
+
+  const addEvent = async (newEvent) => {
     newEvent.preventDefault();
     const form = new FormData(newEvent.target);
     form.append('id', id);
@@ -30,7 +31,11 @@ const updateClick = async (event) => {
     renderStoredTask(result, response);
     addDelete();
     addEdit()
-  })
+  }
+  document.querySelectorAll('.update-appointment-list').forEach(element => {
+    element.replaceWith(element.cloneNode(true));
+    document.querySelector('.update-appointment-list').addEventListener('submit', addEvent)
+  });
 }
 
 

@@ -9,7 +9,7 @@ let modal = `
         </div>
   
         <div class="modal-body p-5 pt-0">
-            <form id="update-appointment-list">
+            <form id="update-appointment-list" class="update-appointment-list">
                 <fieldset>
                     <div class="form-floating mb-3">
                       <input class="form-control rounded-3" type="text" name="title" id="title" form="update-appointment-list" value="appointment" required/>
